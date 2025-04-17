@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(98,83,25);
+    background: linear-gradient(90deg, rgba(98,83,25,1) 0%, rgba(36,33,33,1) 54%, rgba(98,83,25,1) 100%);
+    background: url("resources/img/case-7281.gif") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    padding-top: 80px;
+}
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s;
+    -webkit-text-stroke: 0.2px #000;
+
+}
+.container:hover {
+    transform: scale(1.02);
+}
+h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.rate {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.3s;
+    color:#00ff00;
+}
+.up {
+    color: #4caf50;
+}
+.down {
+    color: #f44336;
+}
+.button {
+    display: inline-block;
+    padding: 16px 30px;
+    margin-top: 30px;
+    background: #ff9800;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    border: none;
+}
+.button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ff9800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navigation{
+    position: fixed;
+    padding-left: 37%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+body {
+    padding-top: 80px;
+}
+
+footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ff9800;
+        padding: 5px 20px;
+        font-weight: bold;
+        
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: inline;
+}
+
+.created{
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    color: #000000;
+    text-align: left;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+footer p {
+    font-size: 14px;
+    color: #000000;
+    display: inline;
+}
+
+
+.hero { 
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff00;
+    
+}
+
+.two{
+    position: relative;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* 🧩 Блоки в сітці 2x2 */
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin:  auto;
+    padding: 30px 20px;
+  }
+  
+  .grid-layout section {
+    flex: 1 1 calc(50% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+
+  nav {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: #ff9800;
+    color: #000000;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .dante {
+    width: 200px;
+    height: 690px;
+    background: url("https://i.pinimg.com/originals/52/7f/64/527f6409ae1738c5e44bed08f3bcd379.gif") no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    flex-shrink: 0;
+    margin-top: center;
+    margin-left: -10px;
+  }
+
+  
+.moving-line {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  margin-top: -80px;
+}
+
+.rates-ticker {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  color: #00ff00;
+}
+
+.arrow-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ff00;
+  white-space: nowrap;
+  animation: moveArrowText 5s linear infinite;
+}
+
+@keyframes moveArrowText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.currencyCheckboxForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin:  auto;
+    padding: 30px 20px;
+}
+
+#rate-all {
+    text-orientation: upright;
+  }
+
+.rate-usd-single{
+    color: #050505;
+}
+
+
+select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #040504;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+select:focus {
+  border-color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+option {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #020302;
+}

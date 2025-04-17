@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dollar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="logo">
+    <div id="logo">
+      <img src="resources/img/logo_transparent.png" alt="IV"/>
+    </div>
+    <div class="navigation">
+      <nav>
+        <a href="#">Головна</a>
+        <a href="#">Каталог</a>
+        <a href="#">Контакти</a>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- GIF зліва -->
+  <section class="dante"></section>
+  <!-- Обгортка для вирівнювання: gif + блоки -->
+  <div class="main-content">
+                 <!-- Moving Line Section -->
+<section class="moving-line">
+  <div class="rates-ticker">
+    <span id="rate-usd">USD = 00.00</span>
+    <span id="rate-eur">EUR = 00.00</span>
+    <span id="rate-pln">PLN = 00.00</span>
+    <span id="rate-czk">CZK = 00.00</span>
+    <span id="rate-cny">CNY = 00.00</span>
+  </div>
+  
+  <div class="arrow-box">
+    <span class="arrow">←</span>
+    <span class="moving-text">moving line</span>
+    <span class="arrow">→</span>
+  </div>
+</section>
+  
+    <!-- Блоки праворуч -->
+    <div class="grid-layout">      
+      <!-- HERO (1) -->
+      <section class="hero">
+        <div class="container">
+          <h1>USD</h1>
+          <div id="rate-usd-single">Завантаження...</div>
+          <button class="button" onclick="fetchSingleRate()">Оновити</button>
+        </div>
+      </section>
+
+      
+
+      <!-- TWO (2) -->
+      <section class="two">
+        <div class="container">
+          <div id="rate-all" class="rate">Завантаження...</div>
+          <button class="button" onclick="fetchAllRates()">Оновити</button>
+        </div>
+      </section>
+
+      <!-- THREE (3) -->
+<section class="three">
+  <div class="container">
+    <select id="currency-list">
+      <option value="">Завантаження валют...</option>
+    </select>
+    
+    <div id="rate-alls" class="rate">Завантаження...</div>
+    <button class="button" type="button" onclick="fetchCheckedCurrencies()">Отримати</button>
+  </div>
+</section>
+
+
+      <!-- FOUR (4) -->
+      <section class="four">
+        <div class="container">
+          <h1>Калькулятор USD → UAH</h1>
+          <select id="currencySelect">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <input type="number" id="amountInput" value="50"/>
+          <button class="button" onclick="calculateCurrency()">Розрахувати</button>
+          <div id="calculatedResult">Результат: —</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p> created by <a href="https://t.me/jokaarbuz">Joka1o</a></p>
+    <p class="created">Since 2025</p>
+  </footer>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
