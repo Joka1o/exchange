@@ -144,3 +144,4 @@ window.addEventListener("DOMContentLoaded", () => {
   updateTickerRates()
 });
 //Щоб запрацював сервер необхідно написати в терміналі node server.js тоді відкриє сервер з якого ми вже будемо брати дані по валютах
+//а також потрібно прописати npm install node-fetch 
